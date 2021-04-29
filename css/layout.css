@@ -1,0 +1,12 @@
+.header {
+    background-color: transparent;
+    padding: 13px 0;
+    color: #fff;
+    border-bottom: 2px solid #dddddd80;
+}
+.short-intro {
+    text-align: center;
+    margin: 70px 0;
+    color: #fff;
+    position: relative;
+}

@@ -1,0 +1,24 @@
+/*
+* All the css related to reseting the
+* default behavior of tags will be 
+* overriden here.
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    color: #2f8be5;
+}
+
+.clear-fix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
