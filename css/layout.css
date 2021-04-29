@@ -10,3 +10,12 @@
     color: #fff;
     position: relative;
 }
+
+.container {
+    padding-top: 40px;
+    width: 100%;
+    background-color: #f1f5f7;
+}
+.products {
+    margin: 20px 0;
+}

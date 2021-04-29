@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 html {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 12px;
 }
 .f-left {
@@ -33,6 +35,15 @@ html {
 .mr-10 {
     margin-right: 10px;
 }
+.mt-5 {
+    margin-top: 5px;
+}
+.green-text {
+    color: #2aa461;
+}
+.red-text {
+    color: #ea4f4f;
+}
 
 /**Header */
 .header-intro-wrapper {
@@ -40,8 +51,8 @@ html {
     background-size: cover;
 }
 .logo {
-    font-size: 1.75rem;
-    font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: 700;
     vertical-align: middle;
     display: inline-block;
 }
@@ -71,8 +82,8 @@ html {
 
 /* Short Intro */
 .heading {
-    font-size: 3rem;
-    font-weight: bold;
+    font-size: 2.3rem;
+    font-weight: 700;
     padding: 25px;
     text-align: center;
     margin: auto auto;
@@ -133,6 +144,160 @@ html {
     cursor: pointer;
 }
 
+/*Container */
+
+.filter-by-text {
+    float: left;
+    text-transform: uppercase;
+    color: #999;
+    padding: 10px 0;
+    margin-right: 20px;
+}
+.filter-by-links {
+    float: left;
+}
+.filter-by-link {
+    background-color: #d9e1e7;
+    display: inline-block;
+    padding: 10px 13px;
+    border-radius: 3px;
+    margin: 0 2px 5px 0;
+}
+.filter-by-link.active, .filter-by-link:hover {
+    color: #fff;
+    background-color: #2f8be5;
+}
+
+/* Products */
+.row {
+    margin: 0 -15px;
+}
+.col {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 20px auto;
+    padding: 0 15px;
+    float: left;
+}
+.product-card {
+    display: block;
+    max-width: 370px;
+    box-shadow: 0 0 3px #dae0e7;
+    margin: auto auto;
+}
+.card-image {
+    cursor: pointer;
+    width: 100%;
+    height: 276px;
+    border-radius: 4px 4px 0 0 ;
+}
+.card-image-wrapper {
+    position: relative;
+}
+.card-image-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    transform: scaleY(0);
+    transform-origin:  top ;
+    transition: all 0.5s ease 0s;
+}
+.card-image-wrapper:hover .card-image-hover {
+    transform: scaleY(1);
+}
+.download-like {
+    background-color: #ebebeb;
+    border-radius: 3px;
+    padding: 5px;
+    display: inline-block;
+    padding: 7px 11px;
+    margin: 7px 0 0 7px;
+}
+.download-like >span:last-child {
+    margin-left: 15px;
+}
+.download-like i {
+    margin-right: 7px;
+}
+.card-hover-links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card-hover-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+}
+.card-hover-links a:last-child {
+    background-color: #2f8be5;
+    margin: 0;
+}
+.card-hover-links a img {
+    vertical-align: middle;
+}
+  
+.card-content{
+    padding: 10px 25px;
+    background-color: #fff;
+    border-radius:  0 0 4px 4px;
+}
+.card-body {
+    height: 110px;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+.card-header {
+    font-size: 1.3rem;
+    font-weight: 700;
+    display: inline-block;
+    padding: 10px 0;
+}
+.card-header:hover {
+    color:#2f8be5 ;
+    text-decoration: underline;
+}
+.card-desc {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+}
+.card-credit {
+    border-top: 1px solid #f1f1f1;
+    padding: 15px 5px;
+    color: #86919d;
+}
+.card-cost {
+    padding: 7px 11px;
+    background-color: #f1f5f8;
+    border-radius: 3px;
+}
+.free {
+    width: 47px;
+    height: 28px;
+    text-align: center;
+    background-color: #2aa461;
+    color: #fff;
+    line-height: 28px;
+    border-radius: 3px;
+}
+.card-author {
+    float: left;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+
+.card-author a{
+    color: #86919d;
+}
 
 @media screen and (min-width: 480px) {
     .search-site {
@@ -151,4 +316,13 @@ html {
     .search-btn {
         width: 90px;
     }
+    .col {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .col {
+        width: 33.33%;
+    }
+
 }
