@@ -21,8 +21,12 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body id="top">
     <div class="header-intro-wrapper clear-fix">
+      <a id="goto-top" href="#top" onclick="scrollToTop();return false">
+        <i class="fas fa-arrow-up"></i
+      ></a>
+
       <div class="max-width-wrapper">
         <div class="header clear-fix">
           <div class="logo clear-fix">
@@ -1043,20 +1047,5 @@
     </div>
   </body>
 
-  <script>
-    window.onload = function () {
-      var ham_icon = document.getElementById("ham-icon");
-      var nav_content = document.getElementsByClassName("mbl-nav-content")[0];
-
-      ham_icon.onclick = function () {
-        if (ham_icon.classList.contains("open")) {
-          ham_icon.classList.remove("open");
-          nav_content.style.transform = "scaleX(0)";
-        } else {
-          ham_icon.classList.add("open");
-          nav_content.style.transform = "scaleX(1)";
-        }
-      };
-    };
-  </script>
+  <script src="js/main.js"></script>
 </html>

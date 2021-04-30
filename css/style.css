@@ -54,6 +54,18 @@ html {
     background: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/top-bg.png);
     background-size: cover;
 }
+#goto-top {
+    padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f1f5f7;
+    box-shadow: 0 0 2px #999;
+    color: #c9d1d7;
+    font-size: 2rem;
+    border-radius: 3px;
+    z-index: 10;
+}
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
