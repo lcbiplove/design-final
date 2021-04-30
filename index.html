@@ -33,11 +33,90 @@
             />
             <div>Digital Market</div>
           </div>
+          <div class="desktop-nav f-right">
+            <ul class="nav-links">
+              <li>
+                <a class="nav-link" href="#"
+                  ><span class="mr-5">Home</span>
+                  <i class="fas fa-angle-down"></i
+                ></a>
+              </li>
+              <li>
+                <a class="nav-link" href="#">All Items </a>
+              </li>
+              <li>
+                <a class="nav-link" href="#">Freebies </a>
+              </li>
+              <li>
+                <a class="nav-link" href="#">Premium </a>
+              </li>
+              <li>
+                <a class="nav-link border-right" href="#">Blog </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-search"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="cart">
+                  <img src="images/cart.png" alt="cart-icon" /><span
+                    class="cart-count"
+                    >0</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a href="#" class="blue-btn"> LOGIN </a>
+              </li>
+            </ul>
+          </div>
+
           <div class="mbl-nav">
             <div id="ham-icon">
               <span></span>
               <span></span>
               <span></span>
+            </div>
+            <div class="mbl-nav-content">
+              <ul class="mbl-nav-top clear-fix">
+                <li>
+                  <a href="#">
+                    <i class="fas fa-search"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="cart">
+                    <img src="images/cart.png" alt="cart-icon" /><span
+                      class="cart-count"
+                      >0</span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="blue-btn"> LOGIN </a>
+                </li>
+              </ul>
+              <ul class="nav-links">
+                <li>
+                  <a class="nav-link" href="#"
+                    ><span class="mr-5">Home</span>
+                    <i class="fas fa-angle-down"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#">All Items </a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#">Freebies </a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#">Premium </a>
+                </li>
+                <li>
+                  <a class="nav-link border-right" href="#">Blog </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -963,4 +1042,21 @@
       </div>
     </div>
   </body>
+
+  <script>
+    window.onload = function () {
+      var ham_icon = document.getElementById("ham-icon");
+      var nav_content = document.getElementsByClassName("mbl-nav-content")[0];
+
+      ham_icon.onclick = function () {
+        if (ham_icon.classList.contains("open")) {
+          ham_icon.classList.remove("open");
+          nav_content.style.transform = "scaleX(0)";
+        } else {
+          ham_icon.classList.add("open");
+          nav_content.style.transform = "scaleX(1)";
+        }
+      };
+    };
+  </script>
 </html>
