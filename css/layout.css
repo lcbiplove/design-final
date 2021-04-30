@@ -19,3 +19,8 @@
 .products {
     margin: 20px 0;
 }
+.footer {
+    padding-top: 40px;
+    background-color: #21272b;
+    color: #dae1e7;
+}

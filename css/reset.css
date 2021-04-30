@@ -15,7 +15,13 @@ a {
 a:hover{
     color: #2f8be5;
 }
-
+button{
+    text-decoration: none;
+    color: #fff;
+    border: 0;
+    background-color: #2f8be5;
+    cursor: pointer;
+}
 .clear-fix:after {
     content: "";
     display: table;

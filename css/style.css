@@ -44,6 +44,10 @@ html {
 .red-text {
     color: #ea4f4f;
 }
+.text-center {
+    text-align: center;
+}
+
 
 /**Header */
 .header-intro-wrapper {
@@ -294,9 +298,329 @@ html {
     margin-left: 10px;
     margin-top: 4px;
 }
-
 .card-author a{
     color: #86919d;
+}
+.load-more-wrapper {
+    width: 100%;
+    margin: 60px  auto;
+    text-align: center;
+}
+#load-more {
+    display: table;
+    display: inline-block;
+    background-color: #d9e1e7;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    line-height: 50px;
+    /* vertical-align: middle; */
+}
+#load-more>span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 2px;
+    background: #85919d;
+    border-radius: 50%;
+}
+#load-more>span:nth-child(2) {
+    width: 6px;
+    height: 6px;
+    margin-right: 2px;
+    margin: 0 1px 1px 0;
+    background: #9aa5b0;
+}
+#load-more>span:last-child {
+    width: 4px;
+    height: 4px;
+    margin: 0 0 2px 0;
+    background: #afb9c2;
+}
+
+/* Pricing plans */
+.pricing-plan-wrapper { 
+    margin: 40px 0;
+}
+.title {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 0;
+}
+.sub-title {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #86919d;
+    margin: 15px 0;
+}
+.pricing-plans-container {
+    width: 100%;
+    padding: 10px 0;
+}
+.pricing-card {
+    background-color: #fff;
+    border-radius: 4px;   
+    padding: 40px 30px;
+    box-shadow: 0 0 2px #dae0e7;
+}
+/* If pricing card contains .has-banner class */
+.pricing-card.has-banner {
+    position: relative;
+    top: -20px;
+    padding: 60px 30px;
+}
+.pricing-card.has-banner:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 20px;
+    left: -5px;
+    height: 38px;
+    background: url(../images/ribbon.png) no-repeat;
+}
+.card-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.card-subheading {
+    color: #86919d;
+    margin: 18px 0;
+    font-size: 1.1rem;
+}
+.card-price {
+    margin: 20px 0;
+
+}
+.card-price>span {
+    color: #2f8be5;
+    font-size: 1.2rem;
+}
+.card-price>span:nth-child(2) {
+    color: #2f8be5;
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+.card-price>span:first-child {
+    vertical-align: top;
+    font-size: 1.7rem;
+}
+.card-lists li {
+    padding: 18px;
+    list-style: none;
+    border-bottom: 1px solid #e7e7e7;
+    position: relative;
+    color: #454545;
+}
+.card-lists li:last-child {
+    border-bottom: 0;
+}
+.card-lists li i {
+    position: absolute;
+    left: 0;
+    color: #a2adb8;
+}
+.card-btn {
+    width: 100%;
+    background-color: #2f8be5;
+    color: #fff;
+    display: block;
+    text-align: center;
+    border-radius: 3px;
+    padding: 16px 0;
+    font-size: 1.1rem;
+    margin: 16px 0;
+}
+.card-btn:hover {
+    color: #fff;
+}
+
+
+/* Join Us */
+.join-us-wrapper {
+    padding: 60px 0;
+    background: url(../images/join-us-bg.png);
+    background-size: cover;
+}
+.join-box {
+    max-width: 573px;
+    margin: 30px auto;
+    position: relative;
+    height: 40px;
+}
+.join-input {
+    max-width: 460px;
+    height: 40px;
+    width: 100%;
+    padding: 0 15px;
+    border-right: calc(113px + 15px);
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 3px;
+    outline: none;
+}
+.join-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 113px;
+    height: 100%;
+    border-radius: 0 3px 3px 0;
+}
+.note {
+    color: #86919d;
+    margin: 5px 0;
+}
+
+/* Testinomials */
+.testimonials-wrapper {
+    padding: 60px 0;
+    padding-bottom: 30px;
+    background-color: #f1f5f7;
+}
+.testimonials-content .col {
+    width: 100%;
+}
+.text-bubble-wrapper {
+    background-color: #fff;
+    box-shadow: 0 0 3px #85919d;
+    max-width: 570px;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    height: 210px;
+    border-radius: 3px;
+    position: relative;
+}
+.text-bubble-wrapper:before {
+    content: '';
+    position: absolute;
+    bottom: -19px;
+    width: 20px;
+    height: 40px;
+    transform: rotate(63deg);
+    background-color: #fff;
+    box-shadow: 2px 2px 2px #ddd;
+
+}
+.text-bubble {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.said {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    font-style: italic;
+    font-size: 1.25rem;
+    color: #666;
+    transform: translate(-0, -50%);
+}
+.said-by {
+    padding: 30px 10px;
+}
+.said-by-pp img {
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #d9e1e7;
+}
+.said-by-detail {
+    margin-left: 90px;
+}
+.said-by-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 12px 0;
+}
+.said-by-proff {
+    margin: 12px 0;
+    color: #a2adb8;
+}
+
+/* Learn eboooks */
+.extra-wrapper {
+    padding: 60px 0;
+    background-color: #fff;
+}
+.extra-btn {
+    border-radius: 3px;
+    background-color: #2f8be5;
+    padding: 15px;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px ;
+}
+.extra-btn:hover {
+    color: #fff;
+}
+
+
+/* Footer */
+.footer .row {
+    margin: 0 -15px;
+}
+.footer .col {
+    width: 50%;
+}
+.footer-head {
+    color: #fff;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.footer-desc-nolink {
+    margin: 10px 0;
+    line-height: 1.5rem;
+}
+.footer-content li {
+    list-style-type: none;
+}
+li a {
+    color: #dae1e7;
+    padding: 10px 10px 10px 0;
+    display: block;
+}
+li a:hover {
+    text-decoration: underline;
+    color: #dae0e7;
+}
+
+.footer .join-box {
+    height: 30px;
+}
+.footer .join-input {
+    height: 30px;
+    padding: 0 7px;
+    border-right: calc(60px + 7px);
+}
+.footer .join-btn {
+    width: 60px;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #383d41;
+}
+.footer-bottom {
+    box-shadow: -1px 0 1px #555;
+    padding: 25px 0;
+    width: 100%;
+    margin-top: 50px;
+}
+.copyright {
+    float: left;
+    margin-top: 10px;
+}
+.footer-bottom li {
+    list-style-type: none;
+    display: inline-block;
+}
+.footer-bottom a {
+    display: inline-block;
 }
 
 @media screen and (min-width: 480px) {
@@ -319,6 +643,19 @@ html {
     .col {
         width: 50%;
     }
+    .testimonials-content .col {
+        width: 100%;
+    }
+    
+}
+@media screen and (min-width: 760px) {
+    .testimonials-content .col {
+        width: 50%;
+    }
+    .footer .col {
+        width: 25%;
+    }
+
 }
 @media screen and (min-width: 1024px) {
     .col {
